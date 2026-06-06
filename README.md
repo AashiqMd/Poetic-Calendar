@@ -55,3 +55,11 @@ The complete architecture, design intent, and product requirements for this app 
 - `engineering.md`: The technical architecture, API payloads, and testing strategy.
 
 *These three documents are the definitive source of truth for the project.*
+
+## New Features (v1.1)
+
+- **Reminisce Mode:** Click the "Reminisce" button to enter a full-screen, immersive mode that automatically scrolls through your generated poems one by one without losing your state.
+- **Gathering Light Animation:** A gorgeous visual effect spawns highly-diffused, soft orbs of light from the edges of your screen that gather into the center orb each time a poem is generated.
+- **Dynamic Orb Brightness:** The background orb permanently grows brighter and slightly larger as more events are added to your timeline.
+- **Demo Mode:** Click the "Demo Mode" button to automatically populate sample events and watch the magic unfold with zero effort.
+- **Custom Soundtrack:** The app plays a soft piano track (`soft_music.mp3`) as background music to accompany your reflection.
