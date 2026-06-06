@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetic Year</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="soft_music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" class="music-toggle">🎵 Play Music</button>
+  <button id="demo-btn" class="demo-btn">✨ Demo Mode</button>
+
+  <div id="ambient-orb" class="ambient-orb"></div>
+  <div id="particle-container"></div>
+  
+  <div class="container">
+    <header>
+      <h1>Poetic Year</h1>
+      <p>Turn your special dates and milestones into a candlelit, poetic journey.</p>
+    </header>
+
+    <main>
+      <section class="input-section" id="input-section">
+        <form id="memory-form">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+          </div>
+          <div class="form-group">
+            <label for="title">Event Title</label>
+            <input type="text" id="title" placeholder="e.g., Adopted Barnaby" required>
+          </div>
+          <div class="form-group">
+            <label for="feeling">How did you feel?</label>
+            <input type="text" id="feeling" placeholder="e.g., Overjoyed and calm" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Description (Optional)</label>
+            <textarea id="description" rows="2" placeholder="A brief memory..."></textarea>
+          </div>
+          <button type="submit" id="submit-btn">Add to Timeline</button>
+          <div id="loading-state" class="hidden">
+            <p>Gathering the light...</p>
+          </div>
+          <div id="error-message" class="hidden error"></div>
+        </form>
+      </section>
+
+      <section class="timeline-section" id="timeline-section">
+        <div class="timeline-line"></div>
+        <div id="timeline-entries">
+          <!-- Entries will be injected here -->
+        </div>
+        <div id="empty-state" class="empty-state">
+          <p>Your year is waiting to be written.</p>
+        </div>
+        <button id="reminisce-btn" class="hidden">Reminisce</button>
+      </section>
+    </main>
+  </div>
+
+  <div id="reminisce-mode" class="reminisce-mode hidden">
+    <div id="reminisce-content" class="reminisce-content">
+      <!-- Poem will fade in here -->
+    </div>
+    <button id="exit-reminisce-btn">End Reminiscing</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
