@@ -16,8 +16,8 @@ This project is built using Python, FastAPI, Vanilla JavaScript/CSS, and the Goo
 
 1. **Clone the repository** (if you haven't already):
    ```bash
-   git clone https://github.com/gca-americas/codingjam-year-in-poetry.git
-   cd codingjam-year-in-poetry
+   git clone https://github.com/AashiqMd/Poetic-Calendar.git
+   cd Poetic-Calendar
    ```
 
 2. **Set up the backend environment**:
